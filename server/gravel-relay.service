@@ -1,0 +1,17 @@
+[Unit]
+Description=Gravel WebSocket relay
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/gravel-relay
+ExecStart=/usr/bin/node /opt/gravel-relay/relay-server.js
+Restart=always
+RestartSec=2
+Environment=HOST=127.0.0.1
+Environment=PORT=8787
+User=www-data
+Group=www-data
+
+[Install]
+WantedBy=multi-user.target

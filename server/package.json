@@ -1,0 +1,13 @@
+{
+  "name": "gravel-relay",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Seed-scoped WebSocket relay for Gravel multiplayer",
+  "main": "relay-server.js",
+  "scripts": {
+    "start": "node relay-server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.3"
+  }
+}
